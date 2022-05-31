@@ -306,7 +306,7 @@ void SupprimerLivre(int counter){
 		//finding a match using for loop
 		if(livre[i].getId()==Id){
 			cout<<"\nLIVRE TROUVE\n\n";
-			cout<<"Voulez-vous supprimer ?\n[1]Oui\n[2]Non\n\nEntrez votre choix: ";
+			cout<<"Voulez-vous supprimerÂ ?\n[1]Oui\n[2]Non\n\nEntrez votre choix: ";
 			cin>>choix;
 			if(choix==1){
 				livre[i].setId(""); //setting the value to none
@@ -322,7 +322,7 @@ void SupprimerLivre(int counter){
 				livre[9].setAuteur("");
 				livre[9].setEdition("");
 				decrement(counter); //calling function to decrement counter
-				cout<<"\nLIVRE SUPPRIME AVEC SUCCES !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+				cout<<"\nLIVRE SUPPRIME AVEC SUCCESÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
                 _getch();
 				main();
 			}
@@ -331,7 +331,7 @@ void SupprimerLivre(int counter){
 			}
 		}
 	}
-	cout<<"\nLIVRE INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+	cout<<"\nLIVRE INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
     _getch();
 	main();
 
@@ -353,7 +353,7 @@ void SupprimerCD(int counter){
 
 		if(cd[i].getId()==Id){
 			cout<<"\nCD TROUVE\n\n";
-			cout<<"Voulez-vous supprimer ?\n[1]Oui\n[2]Non\n\nEntrez votre choix: ";
+			cout<<"Voulez-vous supprimerÂ ?\n[1]Oui\n[2]Non\n\nEntrez votre choix: ";
 			cin>>choix;
 			if(choix==1){
 				cd[i].setId("");
@@ -371,7 +371,7 @@ void SupprimerCD(int counter){
 				cd[9].setEdition("");
 				cd[9].setDuree("");
 				decrement(counter);
-				cout<<"\nCD SUPPRIME AVEC SUCCES !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+				cout<<"\nCD SUPPRIME AVEC SUCCESÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 				_getch();
 				main();
 			}
@@ -380,7 +380,7 @@ void SupprimerCD(int counter){
 			}
 		}
 	}
-	cout<<"\nCD INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+	cout<<"\nCD INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 	_getch();
 	main();
 
@@ -402,7 +402,7 @@ void SupprimerCasette(int counter){
 		//finding a match using for loop
 		if(casette[i].getId()==Id){
 			cout<<"\nCASETTE TROUVE\n\n";
-			cout<<"Voulez-vous supprimer ?\n[1]Oui\n[2]Non\n\nEntrez votre choix: ";
+			cout<<"Voulez-vous supprimerÂ ?\n[1]Oui\n[2]Non\n\nEntrez votre choix: ";
 			cin>>choix;
 			if(choix==1){
 				casette[i].setId(""); //setting the value to none
@@ -429,7 +429,7 @@ void SupprimerCasette(int counter){
 			}
 		}
 	}
-	cout<<"\nCASETTE INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+	cout<<"\nCASETTE INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 	_getch();
 	main();
 
@@ -441,7 +441,7 @@ void EditLivre(int counter){
 	string Id,Titre,Auteur,Edition;
 	cout<<"\nEDIT LIVRE\n\n";
 	if(counter==0){
-		cout<<"IL N'Y A AUCUN LIVRE À MODIFIER !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"IL N'Y A AUCUN LIVRE Ã€ MODIFIERÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
@@ -455,7 +455,7 @@ void EditLivre(int counter){
 			cout<<"TITRE: "<<livre[i].getTitre()<<endl;
 			cout<<"AUTEUR: "<<livre[i].getAuteur()<<endl;
 			cout<<"EDITION: "<<livre[i].getEdition()<<endl;
-			cout<<"\nVoulez-vous modifier ?\n[1]Oui\n[2]Non\n\nEntrez votre choix :";
+			cout<<"\nVoulez-vous modifierÂ ?\n[1]Oui\n[2]Non\n\nEntrez votre choixÂ :";
 			getline(cin,choix);
 			if(choix=="1"){
 				//re-entering values
@@ -473,7 +473,7 @@ void EditLivre(int counter){
 				livre[i].setAuteur(Auteur);
 				livre[i].setEdition(Edition);
 
-				cout<<"\nLIVRE EDITE AVEC SUCCES !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+				cout<<"\nLIVRE EDITE AVEC SUCCESÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 				_getch();
 				EditLivre(counter);//function call to self
 			}
@@ -482,7 +482,7 @@ void EditLivre(int counter){
 			}
 		}
 }
-	cout<<"\nLIVRE INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+	cout<<"\nLIVRE INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 	_getch();
 	main();
 }
@@ -494,7 +494,7 @@ void EditCD(int counter){
 	string duree;
 	cout<<"\nEDIT CD\n\n";
 	if(counter==0){
-		cout<<"IL N'Y A AUCUN CD A MODIFIER !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"IL N'Y A AUCUN CD A MODIFIERÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
@@ -509,7 +509,7 @@ void EditCD(int counter){
 			cout<<"AUTEUR: "<<cd[i].getAuteur()<<endl;
 			cout<<"EDITION: "<<cd[i].getEdition()<<endl;
 			cout<<"DUREE: "<<cd[i].getDuree()<<endl;
-			cout<<"\nVoulez-vous modifier ?\n[1]Oui\n[2]Non\n\nEntrez votre choix :";
+			cout<<"\nVoulez-vous modifierÂ ?\n[1]Oui\n[2]Non\n\nEntrez votre choixÂ :";
 			getline(cin,choix);
 			if(choix=="1"){
 				//re-entering values
@@ -530,7 +530,7 @@ void EditCD(int counter){
 				cd[i].setEdition(Edition);
                 cd[i].setDuree(duree);
 
-				cout<<"\nCD EDITE AVEC SUCCES !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+				cout<<"\nCD EDITE AVEC SUCCESÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 				_getch();
 				EditCD(counter);//function call to self
 			}
@@ -539,7 +539,7 @@ void EditCD(int counter){
 			}
 		}
 }
-	cout<<"\nCD INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+	cout<<"\nCD INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 	_getch();
 	main();
 }
@@ -551,7 +551,7 @@ void EditCasette(int counter){
 	string duree;
 	cout<<"\nEDIT CASETTE\n\n";
 	if(counter==0){
-		cout<<"IL N'Y A AUCUN CASETTE A MODIFIER !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"IL N'Y A AUCUN CASETTE A MODIFIERÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
@@ -566,7 +566,7 @@ void EditCasette(int counter){
 			cout<<"AUTEUR: "<<casette[i].getAuteur()<<endl;
 			cout<<"EDITION: "<<casette[i].getEdition()<<endl;
 			cout<<"DUREE: "<<casette[i].getDuree()<<endl;
-			cout<<"\nVoulez-vous modifier ?\n[1]Oui\n[2]Non\n\nEntrez votre choix :";
+			cout<<"\nVoulez-vous modifierÂ ?\n[1]Oui\n[2]Non\n\nEntrez votre choixÂ :";
 			getline(cin,choix);
 			if(choix=="1"){
 				//re-entering values
@@ -587,7 +587,7 @@ void EditCasette(int counter){
 				casette[i].setEdition(Edition);
                 casette[i].setDuree(duree);
 
-				cout<<"\nCASETTE EDITE AVEC SUCCES !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+				cout<<"\nCASETTE EDITE AVEC SUCCESÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 				//_getch();
 				EditCasette(counter);//function call to self
 			}
@@ -596,7 +596,7 @@ void EditCasette(int counter){
 			}
 		}
 }
-	cout<<"\nCD INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+	cout<<"\nCD INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 	_getch();
 	main();
 }
@@ -606,7 +606,7 @@ void ChercheLivre(int counter){
 	bool print = false; //boolean expression to decide which to print
 	cout<<"RECHERCHER UN LIVRE\n\n";
 	if(counter==0){
-		cout<<"IL N'Y A AUCUN LIVRE A RECHERCHER !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"IL N'Y A AUCUN LIVRE A RECHERCHERÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
@@ -630,7 +630,7 @@ void ChercheLivre(int counter){
 	}
 	//if there's no book found
 	else{
-		cout<<"\nLIVRE INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"\nLIVRE INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
@@ -642,7 +642,7 @@ void ChercheCD(int counter){
 	bool print = false; //boolean expression to decide which to print
 	cout<<"RECHERCHER UN CDn\n";
 	if(counter==0){
-		cout<<"IL N'Y A AUCUN CD A RECHERCHER !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"IL N'Y A AUCUN CD A RECHERCHERÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
@@ -667,7 +667,7 @@ void ChercheCD(int counter){
 	}
 	//if there's no book found
 	else{
-		cout<<"\nCD INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"\nCD INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
@@ -679,7 +679,7 @@ void ChercheCasette(int counter){
 	bool print = false; //boolean expression to decide which to print
 	cout<<"RECHERCHER UN CASETTEn\n";
 	if(counter==0){
-		cout<<"IL N'Y A AUCUN CASETTE A RECHERCHER !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"IL N'Y A AUCUN CASETTE A RECHERCHERÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
@@ -704,7 +704,7 @@ void ChercheCasette(int counter){
 	}
 	//if there's no book found
 	else{
-		cout<<"\nCASETTE INTROUVABLE !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
+		cout<<"\nCASETTE INTROUVABLEÂ !\n\nAppuyez sur n'importe quelle touche pour continuer . . .";
 		_getch();
 		main();
 	}
